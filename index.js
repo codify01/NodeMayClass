@@ -2,13 +2,19 @@ const express = require('express')
 const App = express()
 const ejs = require('ejs')
 let PORT = 3000
-
 App.set('view engine', 'ejs')
+
+App.use(express.urlencoded({extended: true}))
 
 App.use(express.static('public'))
 
 App.get('/signin', (req, res)=>{
     res.render('signin')
+})
+
+App.post('/register', (req,res)=>{
+    console.log('I am working');
+    console.log(req.body);
 })
 App.get('/signup', (req, res)=>{
     res.render('signup')

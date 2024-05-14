@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="form-box">
-        <form class="form">
+        <form class="form" action="/register" method="post">
             <span class="title">Sign up</span>
             <span class="subtitle">Create a free account with your email.</span>
             <div class="form-container">
-              <input type="text" class="input" placeholder="Full Name">
-                    <input type="email" class="input" placeholder="Email">
-                    <input type="password" class="input" placeholder="Password">
+              <input type="text" class="input" placeholder="Full Name" name="fullName">
+                    <input type="email" class="input" placeholder="Email" name="email">
+                    <input type="password" class="input" placeholder="Password" name="password"/>
             </div>
             <button>Sign up</button>
         </form>

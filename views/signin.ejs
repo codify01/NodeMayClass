@@ -8,16 +8,17 @@
 </head>
 <body>
     <div class="form-box">
-        <form class="form">
+        <form class="form" action="/welcome" method="POST">
             <span class="title">Sign in</span>
                 <div class="form-container">
                     <input type="email" 
                         class="input" 
                         placeholder="Email"
-                        name="">
+                        name="email">
                     <input type="password" 
                         class="input" 
-                        placeholder="Password">
+                        placeholder="Password"
+                        name="password">
             </div>
             <button>Sign in</button>
         </form>
